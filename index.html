@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Conversor de Temperatura</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/output.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="page-title">Conversor de Temperatura</h1>
+    </header>
+    <main>
+      <section class="converter">
+        <input class="converter__input" id="temperature-input" type="number" />
+        <input class="converter__input" id="temperature-output" type="number" />
+
+        <select class="converter__options" id="input-options">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+
+        <select class="converter__options" id="output-options">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit" selected>Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by Sarah Oliveira</p>
+      <ul class="socials">
+        <li>
+          <a href="https://github.com/saraholiveirarm" target="_blank"
+            ><i class="fa-brands fa-github"></i>Github</a
+          >
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/saraholiveirarm/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i>Linkedin</a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/a14430386d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

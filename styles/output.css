@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: stretch;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "main" "footer";
+  background-image: linear-gradient(90deg, #667eea 0%, #4b42f5 100%);
+  color: white;
+}
+
+header {
+  height: 20vh;
+  grid-area: header;
+  padding: 1.3rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+header .page-title {
+  font-weight: 400;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+main {
+  grid-area: main;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.converter {
+  display: grid;
+  grid-template-columns: repeat(2, 15rem);
+  justify-content: center;
+  gap: 0.8em;
+}
+.converter__input, .converter__options {
+  padding: 1rem;
+  outline: none;
+  box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.3rem;
+  border-radius: 999px;
+  text-align: center;
+}
+.converter__input {
+  background-color: inherit;
+  color: #fff;
+  border: 2px solid white;
+}
+.converter__options {
+  padding: 0.5rem;
+}
+
+footer {
+  grid-area: footer;
+  padding: 1rem;
+  text-align: center;
+}
+footer p {
+  padding: 0.5rem;
+}
+
+.socials li {
+  display: inline;
+  padding-right: 0.5rem;
+}
+.socials li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.socials li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.fa-brands {
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .converter {
+    grid-template-columns: 15rem;
+  }
+  .converter select:nth-of-type(1) {
+    margin-bottom: 1.5rem;
+  }
+  .converter input:nth-of-type(2) {
+    order: 1;
+  }
+  .converter select:nth-of-type(2) {
+    order: 1;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
