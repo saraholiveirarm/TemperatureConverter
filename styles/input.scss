@@ -67,6 +67,10 @@ main {
     background-color: inherit;
     color: #fff;
     border: 2px solid white;
+
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
   }
 
   &__options {

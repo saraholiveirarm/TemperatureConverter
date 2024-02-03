@@ -59,6 +59,9 @@ main {
   color: #fff;
   border: 2px solid white;
 }
+.converter__input:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .converter__options {
   padding: 0.5rem;
 }
